@@ -1,0 +1,66 @@
+﻿:ClrHome
+:0->A
+:1->B
+:0->C
+:0->D
+:9->X
+:5->Y
+:0->S
+:0->L
+:Repeat 1=2
+:randInt(1,9->V
+:randInt(1,5->W
+:Repeat X=V and Y=W
+:getKey->K
+:If K=24
+:1->A
+:If K=24
+:0->B
+:If K=24
+:0->C
+:If K=24
+:0->D
+:If K=26
+:0->A
+:If K=26
+:1->B
+:If K=26
+:0->C
+:If K=26
+:0->D
+:If K=25
+:0->A
+:If K=25
+:0->B
+:If K=25
+:1->C
+:If K=25
+:0->D
+:If K=34
+:0->A
+:If K=34
+:0->B
+:If K=34
+:0->C
+:If K=34
+:1->D
+:If A=1
+:X-1->X
+:If B=1
+:X+1->X
+:If C=1
+:Y-1->Y
+:If D=1
+:Y+1->Y
+:Output(Y,X,”0”
+:Output(W,V,”𝛑”
+:L+1->L
+:If L=S
+:ClrHome
+:If L=S
+:0->L
+:Output(1,9,S
+:End
+:S+1->S
+:Output(W,V,” ”
+:End
