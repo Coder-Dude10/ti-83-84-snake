@@ -62,5 +62,5 @@
 :Output(1,9,S
 :End
 :S+1->S
-:Output(W,V,” ”
+:Output(W,V,”0”
 :End
